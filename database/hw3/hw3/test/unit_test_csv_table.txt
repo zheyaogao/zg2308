@@ -1,0 +1,564 @@
+********************    Starting test_find by_template_scan    ********************
+
+
+Result =
+ [
+  {
+    "playerID": "willite01",
+    "yearID": "1939",
+    "stint": "1",
+    "teamID": "BOS"
+  }
+]
+
+Elapsed time to execute queries =  0.0817413330078125
+
+
+********************    Complete test_find_by_template_scan    ********************
+
+
+
+
+********************    Starting test_find by_template_indexed    ********************
+
+
+Result =
+ [
+  {
+    "playerID": "willite01",
+    "yearID": "1939",
+    "stint": "1",
+    "teamID": "BOS"
+  }
+]
+
+Elapsed time to execute queries =  0.0009970664978027344
+
+
+********************    Complete test_find_by_template_indexed    ********************
+
+
+
+********************    Starting test_optimizable_1, optimize = False    ********************
+
+
+
+
+Dude. This takes 30 minutes. Trust me.
+
+
+
+
+********************    Starting test_optimizable_2, optimize = True    ********************
+
+
+People table metadata =
+ {
+  "definition": {
+    "name": "people",
+    "path": "People.csv"
+  },
+  "columns": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCity",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCountry",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "throws",
+      "column_type": "text",
+      "not_null": false
+    }
+  ],
+  "indexes": {}
+}
+Batting table metadata =
+ {
+  "definition": {
+    "name": "batting",
+    "path": "Batting.csv"
+  },
+  "columns": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "H",
+      "column_type": "number",
+      "not_null": true
+    },
+    {
+      "column_name": "AB",
+      "column_type": "number",
+      "not_null": false
+    },
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "stint",
+      "column_type": "number",
+      "not_null": true
+    }
+  ],
+  "indexes": {
+    "pid_idx": {
+      "index_name": "pid_idx",
+      "columns": [
+        "playerID"
+      ],
+      "kind": "INDEX"
+    }
+  }
+}
+
+Some samples of the result = 
+[
+  {
+    "birthCity": "Auburn",
+    "birthCountry": "USA",
+    "nameFirst": "Rollie",
+    "nameLast": "Zeider",
+    "playerID": "zeidero01",
+    "throws": "R",
+    "AB": "251",
+    "H": "56",
+    "stint": "1",
+    "teamID": "CHN",
+    "yearID": "1918"
+  },
+  {
+    "birthCity": "Auburn",
+    "birthCountry": "USA",
+    "nameFirst": "Rollie",
+    "nameLast": "Zeider",
+    "playerID": "zeidero01",
+    "throws": "R",
+    "AB": "251",
+    "H": "56",
+    "stint": "1",
+    "teamID": "CHN",
+    "yearID": "1918"
+  },
+  {
+    "birthCity": "Auburn",
+    "birthCountry": "USA",
+    "nameFirst": "Rollie",
+    "nameLast": "Zeider",
+    "playerID": "zeidero01",
+    "throws": "R",
+    "AB": "251",
+    "H": "56",
+    "stint": "1",
+    "teamID": "CHN",
+    "yearID": "1918"
+  },
+  {
+    "birthCity": "New Haven",
+    "birthCountry": "USA",
+    "nameFirst": "Josh",
+    "nameLast": "Zeid",
+    "playerID": "zeidjo01",
+    "throws": "R",
+    "AB": "1",
+    "H": "0",
+    "stint": "1",
+    "teamID": "HOU",
+    "yearID": "2014"
+  },
+]
+
+
+Elapsed time =  0.9165534973144531
+
+
+********************    Complete test_join_optimizable_2    ********************
+
+
+
+
+********************    Starting test_optimizable_3, optimize = True    ********************
+
+
+People table metadata =
+ {
+  "definition": {
+    "name": "people",
+    "path": "../data/People.csv"
+  },
+  "columns": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCity",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCountry",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "throws",
+      "column_type": "text",
+      "not_null": false
+    }
+  ],
+  "indexes": {
+    "pid_idx": {
+      "index_name": "pid_idx",
+      "columns": [
+        "playerID"
+      ],
+      "kind": "INDEX"
+    }
+  }
+}
+Batting table metadata =
+ {
+  "definition": {
+    "name": "batting",
+    "path": "../data/Batting.csv"
+  },
+  "columns": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "H",
+      "column_type": "number",
+      "not_null": true
+    },
+    {
+      "column_name": "AB",
+      "column_type": "number",
+      "not_null": false
+    },
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "stint",
+      "column_type": "number",
+      "not_null": true
+    }
+  ],
+  "indexes": {
+    "pid_idx": {
+      "index_name": "pid_idx",
+      "columns": [
+        "playerID"
+      ],
+      "kind": "INDEX"
+    }
+  }
+}
+
+Result =
+ [
+  {
+    "AB": "565",
+    "H": "185",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1939",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "561",
+    "H": "193",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1940",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "456",
+    "H": "185",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1941",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "522",
+    "H": "186",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1942",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "514",
+    "H": "176",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1946",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "528",
+    "H": "181",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1947",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "509",
+    "H": "188",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1948",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "566",
+    "H": "194",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1949",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "334",
+    "H": "106",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1950",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "531",
+    "H": "169",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1951",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "10",
+    "H": "4",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1952",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "91",
+    "H": "37",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1953",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "386",
+    "H": "133",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1954",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "320",
+    "H": "114",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1955",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "400",
+    "H": "138",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1956",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "420",
+    "H": "163",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1957",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "411",
+    "H": "135",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1958",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "272",
+    "H": "69",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1959",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  },
+  {
+    "AB": "310",
+    "H": "98",
+    "playerID": "willite01",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "throws": "R"
+  }
+]
+
+
+Elapsed time =  0.0020122528076171875
+
+
+********************    Complete test_join_optimizable_3    ********************
