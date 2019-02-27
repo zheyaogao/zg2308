@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1482768025 source:c:\users\huangxiujun\desktop\svn\svn_test\main.c
+	<stdio.h>
+	"function.h"
+
+1483459366 source:c:\users\huangxiujun\desktop\svn\svn_test\function.c
+	"stdio.h"
+	"stdlib.h"
+	"conio.h"
+	"windows.h"
+	"io.h"
+	"dir.h"
+	"string.h"
+	"function.h"
+	"md5.h"
+
+1482568358 c:\users\huangxiujun\desktop\svn\svn_test\function.h
+
+1482300435 source:c:\users\huangxiujun\desktop\svn\svn_test\md5.c
+	"md5.h"
+
+1482300435 c:\users\huangxiujun\desktop\svn\svn_test\md5.h
+
+1483540647 source:f:\cb\svn_test\main.c
+	<stdio.h>
+	"function.h"
+
+1483540831 f:\cb\svn_test\function.h
+
+1482300436 source:f:\cb\svn_test\md5.c
+	"md5.h"
+
+1482300436 f:\cb\svn_test\md5.h
+
+1483540623 source:f:\cb\svn_test\function.c
+	"stdio.h"
+	"stdlib.h"
+	"conio.h"
+	"windows.h"
+	"io.h"
+	"dir.h"
+	"string.h"
+	"function.h"
+	"md5.h"
+
+1483541171 source:f:\cb\svn_test_v0\function.c
+	"stdio.h"
+	"stdlib.h"
+	"conio.h"
+	"windows.h"
+	"io.h"
+	"dir.h"
+	"string.h"
+	"function.h"
+	"md5.h"
+
+1483540831 f:\cb\svn_test_v0\function.h
+
+1482300436 f:\cb\svn_test_v0\md5.h
+
+1483540647 source:f:\cb\svn_test_v0\main.c
+	<stdio.h>
+	"function.h"
+
+1482300436 source:f:\cb\svn_test_v0\md5.c
+	"md5.h"
+
+1483540647 source:c:\users\administrator\desktop\_svn_\svn_test_v0\main.c
+	<stdio.h>
+	"function.h"
+
+1483540831 c:\users\administrator\desktop\_svn_\svn_test_v0\function.h
+
+1482300436 source:c:\users\administrator\desktop\_svn_\svn_test_v0\md5.c
+	"md5.h"
+
+1482300436 c:\users\administrator\desktop\_svn_\svn_test_v0\md5.h
+
+1483545485 source:c:\users\administrator\desktop\_svn_\svn_test_v0\function.c
+	"stdio.h"
+	"stdlib.h"
+	"conio.h"
+	"windows.h"
+	"io.h"
+	"dir.h"
+	"string.h"
+	"function.h"
+	"md5.h"
+
